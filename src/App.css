@@ -105,4 +105,8 @@ main {
 
 #nav-btn {
   display: none;
+  background-image: url('https://www.clipartmax.com/png/middle/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png');
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
