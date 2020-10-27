@@ -1,9 +1,10 @@
 import React from 'react';
+import voltron from '../voltron.png';
 
 const Main = () => {
     return <main>
     <h1 id="title">Defenders of the Universe</h1>
-    <img id="voltron" src="../voltron.png"/>
+    <img id="voltron" src={voltron}/>
     <div class="lion-container">
         <div class="lion black">
             <img src="https://static.wikia.nocookie.net/voltron/images/0/08/Official_-_Black_Lion_standing_pose.png/revision/latest/scale-to-width-down/619?cb=20160627051448"/>
