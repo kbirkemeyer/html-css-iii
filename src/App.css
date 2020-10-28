@@ -16,14 +16,6 @@ header > div {
   align-items: center;
 }
 
-#title {
-  color: white;
-  font-size: 38px;
-  font-family: 'Turret Road', cursive;
-  text-align: center;
-  background-color: black;
-}
-
 .logo {
   height: 75px;
 }
@@ -75,8 +67,6 @@ main {
   margin: 30px;
   display: flex;
   align-items: center;
-  transition-property: all;
-  transition-duration: 1s;
 }
 
 .red {
@@ -96,13 +86,8 @@ main {
   background-color: yellow;
 }
 
-
 .lion img{
   width: 100%;
-}
-
-.lion:hover{
-  transform: rotateY(180deg);
 }
 
 
@@ -120,127 +105,5 @@ main {
   right: 20px;
   top: 20px;
   height: 30px;
-}
-
-@media screen and (max-width: 700px){
- .black {
-   animation: zoom-black 4s ease-out;
-   animation-fill-mode: forwards;
- }
- .red {
-   animation: zoom-red 4s ease-out;
-   animation-fill-mode: forwards;
- }
- .blue {
-   animation: zoom-blue 4s ease-out;
-   animation-fill-mode: forwards;
- }
- .green {
-   animation: zoom-green 4s ease-out;
-   animation-fill-mode: forwards;
- }
- .yellow {
-   animation: zoom-yellow 4s ease-out;
-   animation-fill-mode: forwards;
- }
-
-  #voltron {
-    display: block;
-    animation: fade-in 3s;
-  }
-}
-
-@media screen and (max-width: 1100px){
-  .nav-bar{
-      height: 100vh;
-      width: 300px;
-      min-width: 300px;
-      position: fixed;
-      top: 80px;
-      right:0;
-      background-color: black;
-      transform: translate(300px, 0);
-      transition: .4s;
-      transition-timing-function: ease-in-out;
-  }
-
-  .show{
-    transform: translate(0, 0);
-  }
-  .nav-bar ul{
-      flex-direction: column;
-      align-items: center;
-      height: 300px;
-      position: absolute;
-      top: 30px;
-      min-width: 300px;
-  }
-
-  #nav-btn {
-    display: inline-block;
-  }
-
-}
-
-@keyframes fade-in {
-  0%{
-    opacity: 0;
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoom-black {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(150px, 150px)
-  }
-}
-
-@keyframes zoom-red {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-150px, 150px)
-  }
-}
-
-@keyframes zoom-blue {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(150px, -150px)
-  }
-}
-
-@keyframes zoom-yellow {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-150px, -150px)
-  }
-}
-
-@keyframes zoom-green {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(0, -300px)
-  }
 }
 
