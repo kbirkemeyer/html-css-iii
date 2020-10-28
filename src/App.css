@@ -107,3 +107,134 @@ main {
   height: 30px;
 }
 
+@media screen and (max-width: 1100px){
+  .nav-bar {
+    height: 100vh;
+    width: 300px;
+    min-width: 300px;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    /* translate is the css function that will slide it across the frame */
+    transform: translate(300px, 0);
+    transition: .5s;
+    /* makes the transsition smooth so it doesn't pop out of nowhere like a ghost */
+    transition-timing-function: ease-in-out;
+  }
+
+  /* related to toggle function */
+  .show {
+    transform: translate(0, 0);
+  }
+
+  .nav-bar ul{
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    position: absolute;
+    top: 30px;
+  }
+
+  #nav-btn {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #voltron {
+    display: block;
+    animation: fade-in 4s;
+  }
+
+  .black {
+    animation: zoom-black 3s ease-out;
+    /* how you want the animation to affect the div, in other words, how you want the animation to persist */
+    animation-fill-mode: forwards;
+  }
+
+  .red {
+    animation: zoom-black 3s ease-out;
+    /* how you want the animation to affect the div, in other words, how you want the animation to persist */
+    animation-fill-mode: forwards;
+  }
+
+  .green {
+    animation: zoom-black 3s ease-out;
+    /* how you want the animation to affect the div, in other words, how you want the animation to persist */
+    animation-fill-mode: forwards;
+  }
+
+  .blue {
+    animation: zoom-black 3s ease-out;
+    /* how you want the animation to affect the div, in other words, how you want the animation to persist */
+    animation-fill-mode: forwards;
+  }
+  
+  .yellow {
+    animation: zoom-black 3s ease-out;
+    /* how you want the animation to affect the div, in other words, how you want the animation to persist */
+    animation-fill-mode: forwards;
+  }
+
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* will make black lion disapper when voltron appears */
+@keyframes zoom-black {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(150px, 150px)
+  }
+}
+
+@keyframes zoom-red {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-150px, 150px)
+  }
+}
+
+@keyframes zoom-blue {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(150px, -150px)
+  }
+}
+
+@keyframes zoom-yellow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-150px, -150px)
+  }
+}
+
+@keyframes zoom-green {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 300px)
+  }
+}

@@ -9,12 +9,19 @@ class Header extends Component {
         }
     }
 
+    toggleShowFunc = () => {
+        this.setState( (prevState) => {
+            return {
+                toggleShow: !prevState.toggleShow
+            }
+        })
+    }
 
     render(){
         return <header>
         <div>
             <img alt="logo" className="logo" src="https://www.logolynx.com/images/logolynx/8e/8e509cde090ec53ec7922159435b025a.png"/>
-            <nav className="nav-bar">
+            <nav className={`nav-bar ${this.state.toggleShow ? "show" : ""}`}>
                 <ul>
                     <li>
                         <a href="http://lmgtfy.com">Home</a>
@@ -27,7 +34,7 @@ class Header extends Component {
                     </li>
                 </ul>
             </nav>
-            <input alt="menu-icon" type="image" src={hamburger} id="nav-btn"/>
+            <input onClick={this.toggleShowFunc} alt="menu-icon" type="image" src={hamburger} id="nav-btn"/>
         </div>
     </header>
     }
