@@ -16,13 +16,6 @@ header > div {
   align-items: center;
 }
 
-#title {
-  color: white;
-  font-size: 38px;
-  font-family: 'Turret Road', cursive;
-  text-align: center;
-}
-
 .logo {
   height: 75px;
 }
@@ -47,9 +40,8 @@ header > div {
 
 main {
   min-height: calc(100vh - 80px);
-  position: relative;
-  top: 80px;
   display: flex;
+  margin-top: 80px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -67,8 +59,8 @@ main {
 }
 
 .lion {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   border: 10px solid black;
   background-color: black;
   border-radius: 10px;
@@ -98,15 +90,20 @@ main {
   width: 100%;
 }
 
+
 #voltron {
   display: none;
   width: 60%;
+  position: absolute;
+  max-width: 500px;
 }
 
 #nav-btn {
   display: none;
-  background-image: url('https://www.clipartmax.com/png/middle/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png');
+  background-color: black;
   position: absolute;
   right: 20px;
   top: 20px;
+  height: 30px;
 }
+
